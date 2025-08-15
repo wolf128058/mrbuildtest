@@ -1,7 +1,7 @@
 {
   "game": "minecraft",
   "formatVersion": 1,
-  "versionId": "1.0.3",
+  "versionId": "1.0.4",
   "name": "LilliCobbleMon [Fabric]",
   "summary": "",
   "files": [
@@ -184,6 +184,21 @@
         "https://cdn.modrinth.com/data/MqcGBDhG/versions/NzRyqZFk/CobblemonMoveInspector-fabric-1.2.0.jar"
       ],
       "fileSize": 26720
+    },
+    {
+      "path": "mods/CobblemonSizeVariationFabric-1.2.0+1.6.1.jar",
+      "hashes": {
+        "sha512": "4a0bca7b125bb786275625d0dd7eb4051485de14387a172965bd2e429fad6c517c0f1fc8d32b7388e0471c3fd281fd0e155fdf33f2c95038ef27200533bd018f",
+        "sha1": "4397c3e607126be5dfc5f93fcd7514e4c1d590b1"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/bMdS1gMo/versions/pkMdgheS/CobblemonSizeVariationFabric-1.2.0%2B1.6.1.jar"
+      ],
+      "fileSize": 62873
     },
     {
       "path": "mods/Cobblemon_MegaShowdown-10.0.6-release-fabric.jar",
@@ -816,19 +831,19 @@
       "fileSize": 1157166
     },
     {
-      "path": "mods/cobblemon-legendary-structures-2.1.jar",
+      "path": "mods/cobblemon-legendary-structures-2.2.jar",
       "hashes": {
-        "sha512": "a02fb6086989e6a06a4dcea3a17ce4993a6546da0c56a9768dfac7c296753bbaf32bdb6f7ec126022646071d947888e046168590b63b6a442afb019704f9467a",
-        "sha1": "58b637ea7bc4a690d213e1640f5d4ba6592215be"
+        "sha512": "2440abd89f1399a644253a6f35b62d13c338f5c2f7307b2f8595274294c10269474a3ccf304efa2c8fe63eae0816a61d92750ca4a0739d23fc81cb1c0f545564",
+        "sha1": "28e1edbc2b3ee55399221f78635ba92c2878118b"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/FuRL3fNw/versions/pbbFzJFf/cobblemon-legendary-structures-2.1.jar"
+        "https://cdn.modrinth.com/data/FuRL3fNw/versions/OCcnmSvd/cobblemon-legendary-structures-2.2.jar"
       ],
-      "fileSize": 311378
+      "fileSize": 347170
     },
     {
       "path": "mods/cobblemon-paleontologist-0.1.0-Beta.jar",
@@ -1956,6 +1971,21 @@
       "fileSize": 1625660
     },
     {
+      "path": "mods/spuds-shops-1.21.1-1.8.1-sinytra_fix.jar",
+      "hashes": {
+        "sha512": "110ebb8b4ef471966b8eafc8747d7f2f165856fdb1a842dbaed6a5400c0c1d3c1fb838e367cb69bbb893004f9490f5a692f64244ffa3799fecb6062d83249f7d",
+        "sha1": "7efee7b8fd4b664673a5f3cfd134eaae8be0150d"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/sHFbDnFN/versions/NuBmK0wi/spuds-shops-1.21.1-1.8.1-sinytra_fix.jar"
+      ],
+      "fileSize": 1023478
+    },
+    {
       "path": "mods/stendhal-1.4.1-1.21.jar",
       "hashes": {
         "sha512": "93276c27f00bd16a99bfcd02b24d8ca279aa9af4729e0db685760249751364919cc035e35a6841cab4e2ee95f50bf25b6a29dbd7eed0545efaeb99581777d14a",
@@ -2044,6 +2074,21 @@
         "https://cdn.modrinth.com/data/5aaWibi9/versions/JagCscwi/trinkets-3.10.0.jar"
       ],
       "fileSize": 272944
+    },
+    {
+      "path": "mods/tsfitemcore-1.0.0-fabric.jar",
+      "hashes": {
+        "sha512": "3e592ba44b9553c73501a69541128fdbe1aba99a5d13a7a234779717fe6182af4f01722c352f9781bdbee1257a6092da15d7cede3e7fca3bd997054eccb1b8ee",
+        "sha1": "d3556f05ce7865911ed2afceb2a968b9dd02c96b"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/5nVJBjnO/versions/ndakeuPg/tsfitemcore-1.0.0-fabric.jar"
+      ],
+      "fileSize": 36166
     },
     {
       "path": "mods/u_team_core-fabric-1.21.1-5.6.2.384.jar",
