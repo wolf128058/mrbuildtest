@@ -1,24 +1,24 @@
 {
   "game": "minecraft",
   "formatVersion": 1,
-  "versionId": "1.0.1",
-  "name": "Cobblemon Modpack [Fabric]",
+  "versionId": "1.0.2",
+  "name": "LilliCobbleMon [Fabric]",
   "summary": "",
   "files": [
     {
-      "path": "mods/AdvancedLootInfo-fabric-1.21.1-1.1.8.jar",
+      "path": "mods/AdvancedLootInfo-fabric-1.21.1-1.2.3.jar",
       "hashes": {
-        "sha1": "25a01629dbd71eb5cc7b6ba172d738e968fcc47a",
-        "sha512": "8a12c65e61f7cccf8fbf9ab2b2aec3fdbb9fdb05d04f97bb3d3c93ea81da8d7b15e9fff1bf8eaece28106c13db3a70703ab24ba3474079908b515888fd4e6599"
+        "sha1": "d0bb7f4a8b1ac2275db2a1553bac9be366183096",
+        "sha512": "698b128885aec0a805c06699cad1ae2bac789f9d857351df96a1f39799b000b1ac92b6105bf7b89239e124c57155389320b963ead430e8751c57e7d2a785ffc8"
       },
       "env": {
         "server": "required",
         "client": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/PEPVViac/versions/omAHS58P/AdvancedLootInfo-fabric-1.21.1-1.1.8.jar"
+        "https://cdn.modrinth.com/data/PEPVViac/versions/wcT5NGZ2/AdvancedLootInfo-fabric-1.21.1-1.2.3.jar"
       ],
-      "fileSize": 322616
+      "fileSize": 359279
     },
     {
       "path": "mods/AmbientEnvironment-fabric-1.21.1-18.0.0.2.jar",
@@ -126,19 +126,19 @@
       "fileSize": 369528
     },
     {
-      "path": "mods/CobbleFurnies-fabric-0.5.jar",
+      "path": "mods/CobbleFurnies-fabric-0.6.3.jar",
       "hashes": {
-        "sha1": "4e4666739bdfaa9a2b85a999bab669cc6c3847b5",
-        "sha512": "699e62770f5b8edbdc48333e8cbdd29cb5f8be0fcae2765cd648915e9834d8fdc6c81535b17c5a853096cecdc4a9ce8ae08d43993cfbe523e8e53fd5fefd051f"
+        "sha1": "6c3dc61a4250037e2754834ee2658415fb457c5d",
+        "sha512": "86341d738d8834cb2e883514ef4d7d6e961aaea10e939880213e8dfbb49088913cfd4da03f12e874cd64499ec107ca66add6026d42515d6a5a66d33a07d825c7"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/AXY1OO9m/versions/GlSuS3y6/CobbleFurnies-fabric-0.5.jar"
+        "https://cdn.modrinth.com/data/AXY1OO9m/versions/R2dDA6BA/CobbleFurnies-fabric-0.6.3.jar"
       ],
-      "fileSize": 1607333
+      "fileSize": 1631585
     },
     {
       "path": "mods/Cobblemon-fabric-1.6.1+1.21.1.jar",
@@ -216,19 +216,19 @@
       "fileSize": 62873
     },
     {
-      "path": "mods/Cobblemon_MegaShowdown-10.0.3-release-fabric.jar",
+      "path": "mods/Cobblemon_MegaShowdown-10.0.6-release-fabric.jar",
       "hashes": {
-        "sha1": "86bebc53a9839ff8c4ded68fcd089a006477bd66",
-        "sha512": "62fef71b810d49ae730ca0ffb658bb4e6100afc02ad5a34b9fcaf95d789ad7dd464c3c566a6389fe5388ad7977f194c7b3fb4186c3d0ffd53a749573a508889c"
+        "sha512": "3ce1ff63fa86386c011ebd5d6c68cd06e30df53896ba83516f20b6eb519e2d8dd17c5128c88e3042966a2ba9d0b224a4f2c42b20b6107dfcbdecc70016bed399",
+        "sha1": "572d4fa94c084878289e432f6e55510848f8ca27"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/SszvX85I/versions/6y65OUvw/Cobblemon_MegaShowdown-10.0.3-release-fabric.jar"
+        "https://cdn.modrinth.com/data/SszvX85I/versions/mWrIcR7i/Cobblemon_MegaShowdown-10.0.6-release-fabric.jar"
       ],
-      "fileSize": 15271327
+      "fileSize": 15301449
     },
     {
       "path": "mods/Cobblepedia-Fabric-0.7.0.jar",
@@ -456,6 +456,21 @@
       "fileSize": 245461
     },
     {
+      "path": "mods/MobLassos-v21.1.0-1.21.1-Fabric.jar",
+      "hashes": {
+        "sha1": "ae0eda364f35189226d386262adce981dc005d9b",
+        "sha512": "0d75eb4c3b8dcc130c124e7b05620ae2d0bdcc0541d492cffd76c1449b1caa00ca8bc7946468d3a02f1a32ce9e49d5c6b56601552e96168c3aaef79af106b10b"
+      },
+      "env": {
+        "server": "required",
+        "client": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/ftOBbnu8/versions/e9DxnF1t/MobLassos-v21.1.0-1.21.1-Fabric.jar"
+      ],
+      "fileSize": 103223
+    },
+    {
       "path": "mods/MoreCobblemonTweaks-fabric-1.1.3.jar",
       "hashes": {
         "sha512": "993a9cc97db4a39d3bf6bf0219361457ed42f75836d0e983f5b5a064404ed66045cf6d0a8c2f7ab6df3d7652a6d6df97e8e7f619e2ed302090a8f3dd00e34a5a",
@@ -531,14 +546,29 @@
       "fileSize": 5689995
     },
     {
-      "path": "mods/SafePastures-1.1.0+1.21.1.jar",
+      "path": "mods/PuzzlesLib-v21.1.36-1.21.1-Fabric.jar",
       "hashes": {
-        "sha1": "c27ae5b53e5918ccd7c46dc4dad3806e4c7b87d2",
-        "sha512": "59ebe693a1657526376983098fdaa92c0651acf0a428fe1c741f9a5c50b9cebcea8fdfcd43a41f12f5e0e3dba44894932cd705ead5f8e008026f24f14de9e5ef"
+        "sha512": "1c94c796cea2349d995b627ce4f35efdda619e832812d830446ca83b7cd92ec94ef75c333a7711b420134d071120508e8f391fbcabdd2f936ff54a036f2a6aee",
+        "sha1": "f78facafb67b3065ef07f27156c007e9de768dbc"
       },
       "env": {
         "server": "required",
         "client": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/QAGBst4M/versions/oYPPpKUB/PuzzlesLib-v21.1.36-1.21.1-Fabric.jar"
+      ],
+      "fileSize": 1126526
+    },
+    {
+      "path": "mods/SafePastures-1.1.0+1.21.1.jar",
+      "hashes": {
+        "sha512": "59ebe693a1657526376983098fdaa92c0651acf0a428fe1c741f9a5c50b9cebcea8fdfcd43a41f12f5e0e3dba44894932cd705ead5f8e008026f24f14de9e5ef",
+        "sha1": "c27ae5b53e5918ccd7c46dc4dad3806e4c7b87d2"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
       },
       "downloads": [
         "https://cdn.modrinth.com/data/qpe01spE/versions/ZIowP3NQ/SafePastures-1.1.0%2B1.21.1.jar"
@@ -1041,21 +1071,6 @@
       "fileSize": 79542
     },
     {
-      "path": "mods/cobblemon-spawn-notification-1.6-fabric-1.3.5.jar",
-      "hashes": {
-        "sha1": "9c91b45919a79f239f7ddae8cc7d25ebea8e7eeb",
-        "sha512": "cf73bb1454de977c2d1ac9c9c9416735141c6651dddf8c96a8a9be0e68d946afd519ffa9a3005baae5ed6624866f12a55fd36ea613fc0119a66dbbbc0d9da4e0"
-      },
-      "env": {
-        "client": "required",
-        "server": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/LPuJjiQz/versions/QdTuWWkk/cobblemon-spawn-notification-1.6-fabric-1.3.5.jar"
-      ],
-      "fileSize": 99312
-    },
-    {
       "path": "mods/cobblemon-ui-tweaks-1.0.7.jar",
       "hashes": {
         "sha1": "2e3a4b211b03dde7b6329bbbea693f362839f6de",
@@ -1099,6 +1114,21 @@
         "https://cdn.modrinth.com/data/ZLu8WiYO/versions/HPaVdg1v/cobblemonridingfabric-1.3.7.jar"
       ],
       "fileSize": 57492
+    },
+    {
+      "path": "mods/cobblenav-fabric-2.2.3.jar",
+      "hashes": {
+        "sha1": "3d320112ea38f291e8068ec217579d0d3c3d6a47",
+        "sha512": "58a5872cf2d2c529cb472cf473d055c2ec407c5ebbc9a5e3e355dc3b6b5dfad2791b8e550a6868a11fd7f8df122264fe3af7ad3635f83ad2f24b61d1a063dc14"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/bI8Nt3uA/versions/aB3cwrFJ/cobblenav-fabric-2.2.3.jar"
+      ],
+      "fileSize": 780292
     },
     {
       "path": "mods/cobweb-fabric-1.21-1.3.3.jar",
@@ -2243,32 +2273,17 @@
     {
       "path": "mods/tipsmod-fabric-1.21.1-21.1.2.jar",
       "hashes": {
-        "sha512": "632dae1f4f41ce4bb1b31271942e33385869ab3683e98d7f9ff4d488a1d92551076f3812aefb73c94033e8be80cb2b4f575a30c9f7ad5377cc1581c11579451f",
-        "sha1": "17f618cf3e031bded407e31e5612e50ca4e5eff4"
-      },
-      "env": {
-        "server": "required",
-        "client": "required"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/AMCbgyVw/versions/Hj3RJihq/tipsmod-fabric-1.21.1-21.1.2.jar"
-      ],
-      "fileSize": 119594
-    },
-    {
-      "path": "mods/tmcraft-1.4.12+1.6.1.jar",
-      "hashes": {
-        "sha512": "8a1bfc8d79702e327e6c98bfb07fc6703e6f13b40bb38e49749589807e8ee5c018e7c29f1197b57766f23cab9a1c4a79297b866eaab8f86736c9bd5c737a3c77",
-        "sha1": "0869510ecc65406e3cccaed67975e40e63b97778"
+        "sha1": "17f618cf3e031bded407e31e5612e50ca4e5eff4",
+        "sha512": "632dae1f4f41ce4bb1b31271942e33385869ab3683e98d7f9ff4d488a1d92551076f3812aefb73c94033e8be80cb2b4f575a30c9f7ad5377cc1581c11579451f"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/HU6mkUZs/versions/w2KzRiZz/tmcraft-1.4.12%2B1.6.1.jar"
+        "https://cdn.modrinth.com/data/AMCbgyVw/versions/Hj3RJihq/tipsmod-fabric-1.21.1-21.1.2.jar"
       ],
-      "fileSize": 3805773
+      "fileSize": 119594
     },
     {
       "path": "mods/tooltipfix-1.1.1-1.20.jar",
@@ -2436,19 +2451,19 @@
       "fileSize": 17373
     },
     {
-      "path": "resourcepacks/AllTheMons x Mega Showdown [v2.8].zip",
+      "path": "resourcepacks/AllTheMons x Mega Showdown [v2.8.1].zip",
       "hashes": {
-        "sha1": "0b1d94ae51786ae7621fbdaf71b82cdd4ccfff6f",
-        "sha512": "8b464dc6b7382fa8e998084c1a2ab74afbb569136766f5e43176cfbb7b29cb671bd3187611d14bbe0b094b9067321ad5d75e92f6101402c095b3ea625cc55da1"
+        "sha512": "281625e544dc1c63cf7e74d15a70fadb97a0004430baba09413c87014a07cc20095d237721556afcb18d457715228768eb7aca95b463003adab6e16bd6bbe32b",
+        "sha1": "1e8451658be40c6318736cecdf1fdd75e049dd17"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/odZZdRCE/versions/xipMWwUn/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.8%5D.zip"
+        "https://cdn.modrinth.com/data/odZZdRCE/versions/7qxcnSdK/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.8.1%5D.zip"
       ],
-      "fileSize": 9363884
+      "fileSize": 9369502
     },
     {
       "path": "resourcepacks/Better-Leaves-9.2.zip",
