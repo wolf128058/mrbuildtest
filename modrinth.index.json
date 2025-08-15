@@ -1,7 +1,7 @@
 {
   "game": "minecraft",
   "formatVersion": 1,
-  "versionId": "1.0.2",
+  "versionId": "1.0.2e",
   "name": "LilliCobbleMon [Fabric]",
   "summary": "",
   "files": [
@@ -906,6 +906,21 @@
       "fileSize": 82788
     },
     {
+      "path": "mods/bactromod-2.5.jar",
+      "hashes": {
+        "sha512": "e241eef5b1abf068593342183bcbae636083446e36fc8ac969856f2520f63a8010b98a7df06bd6241d92cf8909efb09851f18c7e58dcb9bb6eb0e2c8975a91d1",
+        "sha1": "19d0fb8735a29f52da66e1a20bec0afa8e4642ae"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/2Ok6dkOD/versions/OWr1GPl2/bactromod-2.5.jar"
+      ],
+      "fileSize": 60129
+    },
+    {
       "path": "mods/balm-fabric-1.21.1-21.0.46.jar",
       "hashes": {
         "sha512": "b7b43bb5768be230b9b3a4cf7ed064b00b9844d5ecdb02c6e94a3e93ec0d71a1813179568e1e94051c8e5c48182a7eeb7bff5422f973c0a1a1810da203c14be5",
@@ -1084,6 +1099,21 @@
         "https://cdn.modrinth.com/data/5WwmqQHF/versions/wgLbAKJk/cobblemon-ui-tweaks-1.0.7.jar"
       ],
       "fileSize": 64439
+    },
+    {
+      "path": "mods/cobblemon_spawn_alerts-fabric-1.8.2.jar",
+      "hashes": {
+        "sha512": "c07467321b955cd18fdb2f5a44b22111cc6694a276f8390dc7e9bb969f1a064d491c7eb3e89b782d59b7516a6dc49fb0f91ac920bcb75676db8c8aca878908e4",
+        "sha1": "d1b00d06142e87384314b7cf8684d0c35bdcd14c"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/pb6jwG0t/versions/NKYb3PBY/cobblemon_spawn_alerts-fabric-1.8.2.jar"
+      ],
+      "fileSize": 1325293
     },
     {
       "path": "mods/cobblemonintegrations-fabric-1.21.1-1.1.3.jar",
