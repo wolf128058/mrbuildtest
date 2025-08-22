@@ -1,7 +1,7 @@
 {
   "game": "minecraft",
   "formatVersion": 1,
-  "versionId": "1.0.4",
+  "versionId": "1.0.5",
   "name": "LilliCobbleMon [Fabric]",
   "summary": "",
   "files": [
@@ -49,6 +49,21 @@
         "https://cdn.modrinth.com/data/Q2OqKxDG/versions/j80BmLRo/BetterAdvancements-Fabric-1.21.1-0.4.3.21.jar"
       ],
       "fileSize": 100151
+    },
+    {
+      "path": "mods/BetterFurnacesReforged-1.21.1-1.1.2518.1-fabric.jar",
+      "hashes": {
+        "sha512": "102cc6b56eac5e5fa2a60412807b736a5dd1cfc98d9e0aaaf1a7fe94f879e99820d8ee8d74a2d9935242265550efcd62c713bc5e0b359d3dba09ba95f469b35f",
+        "sha1": "59d45836b64ab0acf1f0d66cfb6f2e8783264b48"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/ZXOYCX2A/versions/bJ5ueqVe/BetterFurnacesReforged-1.21.1-1.1.2518.1-fabric.jar"
+      ],
+      "fileSize": 633188
     },
     {
       "path": "mods/BetterPingDisplay-Fabric-1.21.1-1.1.1.jar",
@@ -201,19 +216,19 @@
       "fileSize": 62873
     },
     {
-      "path": "mods/Cobblemon_MegaShowdown-10.0.6-release-fabric.jar",
+      "path": "mods/Cobblemon_MegaShowdown-10.0.7-release-fabric.jar",
       "hashes": {
-        "sha512": "3ce1ff63fa86386c011ebd5d6c68cd06e30df53896ba83516f20b6eb519e2d8dd17c5128c88e3042966a2ba9d0b224a4f2c42b20b6107dfcbdecc70016bed399",
-        "sha1": "572d4fa94c084878289e432f6e55510848f8ca27"
+        "sha512": "9643bfb50e7dced872ac156fbdc37ffb660b161a709843e74843dbace3c9abc6b7abae13ec7f122014a0fdf00c977c667ebe844c0c9c06bf1c6445745bf85cc5",
+        "sha1": "f20dc8fb657855d61e833fdfd3e9c4d5c0dc8c73"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/SszvX85I/versions/mWrIcR7i/Cobblemon_MegaShowdown-10.0.6-release-fabric.jar"
+        "https://cdn.modrinth.com/data/SszvX85I/versions/w178IQgY/Cobblemon_MegaShowdown-10.0.7-release-fabric.jar"
       ],
-      "fileSize": 15301449
+      "fileSize": 16446828
     },
     {
       "path": "mods/Cobblepedia-Fabric-0.7.0.jar",
@@ -304,6 +319,21 @@
         "https://cdn.modrinth.com/data/LGVihYcz/versions/XToYnTFA/EMIProfessions-fabric-1.21.1-1.0.3.jar"
       ],
       "fileSize": 23809
+    },
+    {
+      "path": "mods/FactoryAPI-1.21.1-2.2.6-fabric.jar",
+      "hashes": {
+        "sha512": "a04ba19b9af9a7bf5fb32c305c4b55a5b5d99a6c6fb23f4c85f6cfcdbd2f7e528d90aed5abc5eed777c227e5623fa9190932e05095d20768fffc5a07adc333cd",
+        "sha1": "28e2b282562f1b3294b49cbe3d4a640233d577ce"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/nkTZHOLD/versions/ezoVnOZM/FactoryAPI-1.21.1-2.2.6-fabric.jar"
+      ],
+      "fileSize": 546646
     },
     {
       "path": "mods/FarmersDelight-1.21.1-3.1.2+refabricated.jar",
@@ -726,19 +756,34 @@
       "fileSize": 619073
     },
     {
-      "path": "mods/bookshelf-fabric-1.21.1-21.1.67.jar",
+      "path": "mods/bookshelf-fabric-1.21.1-21.1.68.jar",
       "hashes": {
-        "sha512": "0b60a52435a08310e0148341ce518eacf803ddf8c960acb96ce9fd9fa8b2fda47dbb0b7602eaeded3a16dc061542f14caf94140e0249677af0a133511aae0bf6",
-        "sha1": "7856e58aaf927d0c4ffd9f0242420d1c0dc0d67b"
+        "sha512": "82fc2a68988f43e04d2de9cd0037e10d73803d0916afb9b414f66e780ab2bb103bcd06f8656530813df06ca48e6897d3d09ec123391677b7e68597fe46a32123",
+        "sha1": "9dd02cc362349a1bd69a19e395c68c2fe404369d"
       },
       "env": {
         "client": "required",
         "server": "required"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/uy4Cnpcm/versions/LLzmfiA5/bookshelf-fabric-1.21.1-21.1.67.jar"
+        "https://cdn.modrinth.com/data/uy4Cnpcm/versions/9o15dtSW/bookshelf-fabric-1.21.1-21.1.68.jar"
       ],
-      "fileSize": 339827
+      "fileSize": 343940
+    },
+    {
+      "path": "mods/botanypots-fabric-1.21.1-21.1.38.jar",
+      "hashes": {
+        "sha512": "18f1378f8078999919065a363df1ec4947cb05415bde588dede61fb3d73021a6f1a4b9c04c2a81d8de02c34e2c356eb42973254a026c23895eea4d0edfa72637",
+        "sha1": "158bab2ccb31c8ac78eff3be60ad5a87a85b8d83"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/U6BUTZ7K/versions/SLGWhs1c/botanypots-fabric-1.21.1-21.1.38.jar"
+      ],
+      "fileSize": 1101153
     },
     {
       "path": "mods/bwncr-fabric-1.21.1-3.20.3.jar",
@@ -876,6 +921,21 @@
       "fileSize": 64439
     },
     {
+      "path": "mods/cobblemonboxlink-fabric-1.21.1-1.0.4.jar",
+      "hashes": {
+        "sha512": "3c56415f244d7d7a860e8eca623ccae3167a35ce462a22c35a82ffb5a8b8a492167b72728d25124dd645b9c484ae590b6bc8cb32d2114caa87e3bb8397a5dea1",
+        "sha1": "7663e8c52e33ef1812063da88d9a0f80b4f72024"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/93tFY5AF/versions/S3ROOcZt/cobblemonboxlink-fabric-1.21.1-1.0.4.jar"
+      ],
+      "fileSize": 52677
+    },
+    {
       "path": "mods/cobblemonintegrations-fabric-1.21.1-1.1.3.jar",
       "hashes": {
         "sha512": "0380ed9eca5b9c272bee2b3ffebddaf37784a744b4e52a939d72b1749c0b065d9ac3673e3dbfde56a626b323c10f3f8b4ea71914a1cdb8def70fde20ab34d98f",
@@ -966,6 +1026,21 @@
       "fileSize": 1014044
     },
     {
+      "path": "mods/cookingforblockheads-fabric-1.21.1-21.1.16.jar",
+      "hashes": {
+        "sha512": "083d6d5991485504c7fac0a3308d1e3809739428a35097465dd903db4e3b0d81423094624e8c894b544b956e767a2ee271d0cc1c322195cabe193342f2a0d3af",
+        "sha1": "794ec3cb57ffb20cf21bb7d7913b082f78527961"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/vJnhuDde/versions/vCuisM4b/cookingforblockheads-fabric-1.21.1-21.1.16.jar"
+      ],
+      "fileSize": 1283054
+    },
+    {
       "path": "mods/craftingtweaks-fabric-1.21.1-21.1.5.jar",
       "hashes": {
         "sha512": "233cf694333d52e02f756c81bc12a12968e5cd2e756bb515315f5827b3416a55d098fe9dda52bbbfe12dc6ee353028fea2549db142c6130cccf9d91b5a23c88d",
@@ -1009,6 +1084,21 @@
         "https://cdn.modrinth.com/data/ZcR9weSm/versions/RoDZEags/dynamiccrosshair-9.6%2B1.21.1-fabric.jar"
       ],
       "fileSize": 506644
+    },
+    {
+      "path": "mods/easy_mob_farm-fabric-1.21.1-10.0.0.jar",
+      "hashes": {
+        "sha512": "8eb7c73d4ab0796277d9c5bd66414f939cfafb0d31d8f517c73fadba989f35f69f6a8931d84a065fce5bdb3e5fef7585a9bd15290157b7e4a0cb63ac1bc8b06c",
+        "sha1": "a0f1b6586b44b8ca41a789c86eb8a3a1c52cdce9"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/crxsDbEo/versions/r6BqE1bB/easy_mob_farm-fabric-1.21.1-10.0.0.jar"
+      ],
+      "fileSize": 851304
     },
     {
       "path": "mods/emi-1.1.22+1.21.1+fabric.jar",
@@ -1249,6 +1339,21 @@
         "https://cdn.modrinth.com/data/isWGaSnM/versions/qXGqnq7v/hiddenmons-cobblemon-v0.6.jar"
       ],
       "fileSize": 1163633
+    },
+    {
+      "path": "mods/i-want-it-earlier-2.6.4.jar",
+      "hashes": {
+        "sha512": "b83a86b1bdc9e538132af92e5508b59c9b6113932bc59c3bf856b80bfc318020bf4b8c20aff425b70fca07f5fad6aff7f798ea625cf734e562d6e3e74a1c6a68",
+        "sha1": "930a981260b7344e668cb5d094feb3c0c0aa7c0e"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/5VeBsBSL/versions/DIFe4IwG/i-want-it-earlier-2.6.4.jar"
+      ],
+      "fileSize": 243695
     },
     {
       "path": "mods/iris-fabric-1.8.8+mc1.21.1.jar",
@@ -1566,6 +1671,21 @@
       "fileSize": 188035
     },
     {
+      "path": "mods/midnightlib-1.7.5-fabric+1.21.1.jar",
+      "hashes": {
+        "sha512": "5cf7c714cdc6c915665a872debf15840b994aa0aab5f9fce0ae65d2f0eff7bf9fcd98fb776ac512a9e2da0effaaad468feb860386196bf2e52a22628977aa7f4",
+        "sha1": "c32c79bd001e400ec7ebaccfffaed465daf42835"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/codAaoxh/versions/vqqujBpd/midnightlib-1.7.5-fabric%2B1.21.1.jar"
+      ],
+      "fileSize": 62853
+    },
+    {
       "path": "mods/modmenu-11.0.3.jar",
       "hashes": {
         "sha512": "4c6387a059c7ac9028acc3d78124af02a4495bef2c16783bbffe5bf449067daf2620708fd57f8725e46f0c34d0f571adf60f0869742bfe7f6101ddf13a2a87da",
@@ -1686,6 +1806,21 @@
       "fileSize": 86155
     },
     {
+      "path": "mods/randombonemealflowers-1.21.1-4.7.jar",
+      "hashes": {
+        "sha512": "ca14d72e929a6d384ebd3452bbbbfad5d728d3a84e593d42c2e828670227223cf3dc88c09d097f31027db21c60865be2cc7bcfce293ec9575fe92f2cb84f3570",
+        "sha1": "8b34385169da9cfc6149a819e6a0e3e90813986b"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/17enPZMC/versions/XnVod4i3/randombonemealflowers-1.21.1-4.7.jar"
+      ],
+      "fileSize": 48183
+    },
+    {
       "path": "mods/rctapi-fabric-1.21.1-0.13.7-beta.jar",
       "hashes": {
         "sha512": "2b07779c03e6bc098189871b91b73dc00da8e9355b09ae4d02ebbd188a70f9b29c6b1e971ac5d9f067dca6dc0d5142c38e9cdd909baa41bb136cc3bd80b67a0f",
@@ -1789,6 +1924,21 @@
         "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar"
       ],
       "fileSize": 485586
+    },
+    {
+      "path": "mods/servercore-fabric-1.5.10+1.21.1.jar",
+      "hashes": {
+        "sha512": "dac68103d1ab69adeecdff220d391b4b5d9a826db1b94a8c5372fec8d5e6c41eb37ebc96b8361be84df5c3499a1b0e4d2a657d60df553b47dde133100666268d",
+        "sha1": "b18ce5438e3d1fe7bfcf2ad546a78ee9d57a24cf"
+      },
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/4WWQxlQP/versions/FDzBkBBD/servercore-fabric-1.5.10%2B1.21.1.jar"
+      ],
+      "fileSize": 905717
     },
     {
       "path": "mods/show-me-your-skin-1.11.3+1.21.jar",
