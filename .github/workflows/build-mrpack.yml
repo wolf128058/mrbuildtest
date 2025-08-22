@@ -1,0 +1,172 @@
+name: Build & Release FAT .mrpack
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "modrinth.index.json"
+      - "overrides/**"
+      - ".github/workflows/build-fat-mrpack.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fat-mrpack-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout (with LFS)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      # --- LFS: erzwingen & ausführliches Logging ---
+      - name: Ensure Git LFS & fetch binaries (+debug)
+        run: |
+          set -euxo pipefail
+          git lfs version || (sudo apt-get update && sudo apt-get install -y git-lfs && git lfs install)
+          git lfs install --local
+
+          echo "---- git lfs env ----"
+          git lfs env || true
+
+          # komplette LFS-Payload für overrides ziehen
+          git lfs pull --include="overrides/**" --exclude=""
+
+          echo "---- git lfs ls-files (alle) ----"
+          git lfs ls-files || true
+
+          echo "---- git lfs ls-files (nur overrides) ----"
+          git lfs ls-files overrides || true
+
+          echo "---- overrides/mods Inhalt (Größen) ----"
+          if [ -d overrides/mods ]; then
+            find overrides/mods -maxdepth 1 -type f -printf "%P\t%k KB\n" | sort || true
+          else
+            echo "(kein overrides/mods Ordner gefunden)"
+          fi
+
+          echo "---- Pointer-Check (erste 3 Zeilen) ----"
+          # wenn eine Datei noch LFS-Pointer ist, steht die Spezifikationszeile im Klartext drin
+          if [ -d overrides ]; then
+            PO=$(grep -RIl --exclude-dir=.git -m1 "version https://git-lfs.github.com/spec" overrides || true)
+            if [ -n "$PO" ]; then
+              echo "::group::Pointer-Dateien entdeckt – Anzeige der Header"
+              echo "$PO" | while read -r f; do
+                echo "FILE: $f"
+                head -n3 "$f" || true
+              done
+              echo "::endgroup::"
+              echo "::error::Git LFS Pointer in overrides gefunden. Die Binärdaten wurden nicht heruntergeladen."
+              echo "Tipps: .gitattributes prüfen (z.B. 'overrides/**/*.jar filter=lfs ...'); LFS-Quota/Bandbreite; private Repos -> GITHUB_TOKEN-Rechte."
+              exit 1
+            fi
+          fi
+
+      - name: Ensure tooling
+        run: |
+          set -euxo pipefail
+          sudo apt-get update
+          sudo apt-get install -y jq curl zip unzip
+
+      - name: Validate manifest
+        run: |
+          set -euo pipefail
+          test -f modrinth.index.json || { echo "::error::modrinth.index.json fehlt im Repo-Root"; exit 1; }
+          jq -e '.formatVersion and (.files | type=="array")' modrinth.index.json >/dev/null
+
+      - name: Read name/version
+        id: meta
+        run: |
+          set -euo pipefail
+          NAME_RAW=$(jq -r '.name // "Pack"' modrinth.index.json)
+          VER_RAW=$(jq -r '.versionId // .version // .version_number // "dev"' modrinth.index.json)
+          NAME_SAFE=$(printf "%s" "$NAME_RAW" | tr ' ' '_' | tr -cd 'A-Za-z0-9._-')
+          VER_SAFE=$(printf "%s" "$VER_RAW" | tr ' ' '_' | tr -cd 'A-Za-z0-9._-')
+          echo "pack_name=$NAME_SAFE" >> "$GITHUB_OUTPUT"
+          echo "version=$VER_SAFE" >> "$GITHUB_OUTPUT"
+
+      - name: Stage pack root (index + existing overrides)
+        run: |
+          set -euo pipefail
+          rm -rf .packroot build
+          mkdir -p .packroot build
+          cp modrinth.index.json .packroot/modrinth.index.json
+          if [ -d overrides ]; then
+            rsync -a overrides/ .packroot/overrides/
+          else
+            mkdir -p .packroot/overrides
+          fi
+
+      - name: List overrides BEFORE downloads
+        run: |
+          set -euo pipefail
+          find .packroot/overrides -maxdepth 2 -type f -printf "%P\t%k KB\n" | sort || true
+
+      - name: Download files[] into overrides/<path> (FAT)
+        run: |
+          set -euo pipefail
+          DESTROOT=".packroot/overrides"
+          jq -c '.files[]' modrinth.index.json | while read -r item; do
+            RELPATH=$(jq -r '.path // empty' <<<"$item")
+            URL=$(jq -r '.downloads[0] // empty' <<<"$item")
+            SHA512=$(jq -r '.hashes.sha512 // empty' <<<"$item")
+            SHA1=$(jq -r '.hashes.sha1 // empty' <<<"$item")
+
+            if [[ -z "$RELPATH" || -z "$URL" ]]; then
+              echo "::notice::skip (missing path or download)"
+              continue
+            fi
+
+            OUT="$DESTROOT/$RELPATH"
+            mkdir -p "$(dirname "$OUT")"
+            echo "↓ $URL -> overrides/$RELPATH"
+            curl -fL --retry 3 --retry-delay 2 -o "$OUT" "$URL"
+
+            if [[ -n "$SHA512" ]]; then
+              echo "$SHA512  $OUT" | sha512sum -c -
+            elif [[ -n "$SHA1" ]]; then
+              echo "$SHA1  $OUT" | sha1sum -c -
+            else
+              echo "::notice::no hash for $RELPATH"
+            fi
+          done
+
+      - name: List overrides AFTER downloads
+        run: |
+          set -euo pipefail
+          find .packroot/overrides -maxdepth 2 -type f -printf "%P\t%k KB\n" | sort || true
+
+      - name: Build .mrpack (no wrapper)
+        id: package
+        run: |
+          set -euo pipefail
+          OUT="build/${{ steps.meta.outputs.pack_name }}-${{ steps.meta.outputs.version }}.mrpack"
+          (cd .packroot && zip -X -r "../$OUT" .)
+          echo "artifact=$OUT" >> "$GITHUB_OUTPUT"
+
+      - name: Verify mrpack content
+        run: |
+          set -euo pipefail
+          unzip -l "${{ steps.package.outputs.artifact }}"
+          unzip -p "${{ steps.package.outputs.artifact }}" modrinth.index.json | jq '.formatVersion, .name, (.files | length)'
+
+      - name: Release .mrpack (ohne Checksums)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ format('{0}-{1}-fat', steps.meta.outputs.pack_name, steps.meta.outputs.version) }}
+          name: ${{ steps.meta.outputs.pack_name }} v${{ steps.meta.outputs.version }} (FAT)
+          draft: false
+          prerelease: false
+          files: |
+            ${{ steps.package.outputs.artifact }}
